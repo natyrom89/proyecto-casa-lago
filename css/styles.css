@@ -408,6 +408,12 @@ header {
       width: 300px;
   }
 
+  .about-text1 {
+    font-size: 12px; /* Reduce el tamaño de la fuente del texto */
+    line-height: 1.4; /* Ajusta el interlineado del texto */
+    width: 300px;
+}
+
   .titulo {
       font-size: 15px; /* Reduce el tamaño de la fuente del título */
       text-align: center;
@@ -415,7 +421,7 @@ header {
 }
 
 .testimonials {
-  padding: 6rem;
+  padding: 1rem;
   background-color:#333; /* Fondo negro */
 }
 
@@ -549,22 +555,83 @@ header {
     }
 
   .service-menu {
-    width: 100%; /
-  }
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+}
 
   .menu-contenido {
     margin-left: 0; 
     width: 100%; 
     padding-left: 0; 
+    align-items: center;     /* Centra verticalmente */
   }
 
   .services h2 {
-    padding: 1em; 
     font-size: 14px; 
+    width: 300px;
+    text-align: center;
+    height: 100%;
   }
   
+  .imagen-servicio {
+    width: 350px; 
+    height: 200px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; 
+  }
+
+  .texto {
+    font-size: 12px; /* Reduce el tamaño de la fuente del texto */
+    line-height: 1.4; /* Ajusta el interlineado del texto */
+    width: 200px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;
+  }
+
+  .titulo-servicios{
+    font-size: 14px;
+  }
 }
 
+@media (max-width: 600px) {
+  
+  .container {
+    display: none; /
+  }
+
+.service-menu {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
+
+.menu-contenido {
+  margin-left: 0; 
+  width: 100%; 
+  padding-left: 0; 
+  align-items: center;     /* Centra verticalmente */
+
+}
+
+.imagen-servicio {
+  width: 350px; 
+  height: 200px; 
+
+}
+
+.texto {
+  font-size: 12px; /* Reduce el tamaño de la fuente del texto */
+  line-height: 1.4; /* Ajusta el interlineado del texto */
+  width: 200px;
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;
+}
+
+}
 
 /*Seccion CONTACTOS*/
 
@@ -845,6 +912,7 @@ header {
 
   .texto {
     font-size: 13px;
+    text-align: center;
   }
 }
 
@@ -860,6 +928,9 @@ header {
 
   .texto {
     font-size: 12px;
+    line-height: 1.4; /* Ajusta el interlineado del texto */
+    width: 300px;
+    text-align: center;
   }
 }
 
